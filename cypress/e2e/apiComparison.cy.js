@@ -33,13 +33,13 @@ function compareResponses(response1, response2) {
             path: newPath,
             type: 'Missing key',
             value1: 'Key not present',
-            value2: 'Present in API 2'
+            value2: 'Present in API PO'
           });
         } else if (!(key in obj2)) {
           differences.push({
             path: newPath,
             type: 'Missing key',
-            value1: 'Present in API 1',
+            value1: 'Present in API PI',
             value2: 'Key not present'
           });
         } else {
@@ -85,8 +85,8 @@ describe('API Comparison', () => {
         if (differences.length > 0) {
           differences.forEach(diff => {
             cy.log(`Difference found at ${diff.path}: ${diff.type}`);
-            cy.log(`API 1: ${diff.value1}`);
-            cy.log(`API 2: ${diff.value2}`);
+            cy.log(`API IS: ${diff.value1}`);
+            cy.log(`API PO: ${diff.value2}`);
           });
           cy.log('Differences:', JSON.stringify(differences, null, 2));
         } else {

@@ -19,7 +19,7 @@ const {
         body: requestData,
         failOnStatusCode: false
       }).then(response1 => {
-        // Verificar status da resposta da API 1
+        // Verifica status da resposta da API IS
         if (response1.status !== 200) {
           cy.log('Erro ao chamar a API IS:', response1.status, response1.statusText);
           return;
@@ -35,13 +35,13 @@ const {
           body: requestData,
           failOnStatusCode: false
         }).then(response2 => {
-          // Verificar status da resposta da API 2
+          // Verifica status da resposta da API PO
           if (response2.status !== 200) {
             cy.log('Erro ao chamar a API PO:', response2.status, response2.statusText);
             return;
           }
   
-          // Verificar se a estrutura da resposta é válida
+          // Verifica se a estrutura da resposta é válida
           expect(response1).to.have.property('body');
           expect(response2).to.have.property('body');
   

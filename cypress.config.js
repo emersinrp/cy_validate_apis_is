@@ -29,6 +29,6 @@ module.exports = defineConfig({
       html: false,
       json: true,
     },
-    supportFile: false, // Adicione esta linha para desativar o arquivo de suporte
+    supportFile: false,
   },
 });

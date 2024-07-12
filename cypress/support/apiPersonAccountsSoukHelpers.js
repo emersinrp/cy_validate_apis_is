@@ -4,7 +4,7 @@ const apiPoUrl = 'https://integrationqas.brf-corp.com/RESTAdapter/ygg/person_acc
 const apiIsAuth = 'Basic c2ItMTQ4NzNmZWEtMWI2Zi00ZmI4LWEzZmYtYzY0YmU2M2YwNjc2IWI0ODc5fGl0LXJ0LWJyZi1zYXAtaW50ZWdyYXRpb24tc3VpdGUtaG1sLWw1enRtdm0wIWIxMDY6Y2M3OTMxNWMtZGJjZi00ZjQ0LWFhZjctN2NhMmQyMjYzNDk4JC1fakxVNUo0Z3lmUmJvY0RUUmZxUVZWcXQzaFVJZ0I3b3RWZnh3RmllNWM9';
 const apiPoAuth = 'Basic U1JWX1lHRzpQbGF0ODc2N18jJDA5OA==';
 
-const requestData = require('../fixtures/requestData.json');
+const requestData = require('../fixtures/requestDataPersonAccountsSoukHelpers.json');
 
 function compareResponses(response1, response2) {
   const differences = [];

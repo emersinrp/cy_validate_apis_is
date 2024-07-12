@@ -5,9 +5,9 @@ const {
     apiPoAuth,
     requestData,
     compareResponses
-  } = require('../support/apiHelpers');
+  } = require('../../support/apiPersonAccountsSoukHelpers');
   
-  describe('API Comparison', () => {
+  describe('API Comparison Person Accounts Souk IS <-> PO ', () => {
     it('should validate and compare the API responses', () => {
       cy.request({
         method: 'POST',

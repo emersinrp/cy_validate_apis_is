@@ -1,7 +1,7 @@
-const { getApiUrl, apiAuth } = require('../../support/apiUtilsDescriptionHelpers');
+const { getApiUrl, apiAuth } = require('../../support/apiOperationOrderHelpers');
 
-describe('API Utils Description IS', () => {
-  it('should validate the response of API Utils Description', () => {
+describe('API Operation Order IS', () => {
+  it('should validate the response of API Operation Order', () => {
     const topValue = Math.floor(Math.random() * 200) + 1; // Gerar número aleatório entre 1 e 200
     const urlWithTop = getApiUrl(topValue);
 

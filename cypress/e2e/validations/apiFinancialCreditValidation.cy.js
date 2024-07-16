@@ -2,7 +2,7 @@ const { getApiUrl, apiAuth } = require('../../support/apiFinancialCreditHelpers'
 
 describe('API Financial Credit IS', () => {
   it('should validate the response of API Financial Credit', () => {
-    const topValue = Math.floor(Math.random() * 200) + 1; // Gerar número aleatório entre 1 e 60
+    const topValue = Math.floor(Math.random() * 200) + 1; // Gerar número aleatório entre 1 e 200
     const urlWithTop = getApiUrl(topValue);
 
     cy.request({

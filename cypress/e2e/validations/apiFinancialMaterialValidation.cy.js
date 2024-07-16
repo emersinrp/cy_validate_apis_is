@@ -1,7 +1,7 @@
-const { getApiUrl, apiAuth } = require('../../support/apiFinancialCreditHelpers');
+const { getApiUrl, apiAuth } = require('../../support/apiFinancialMaterialHelpers');
 
-describe('API Financial Credit IS', () => {
-  it('should validate the response of API Financial Credit', () => {
+describe('API Financial Material IS', () => {
+  it('should validate the response of API Financial Material', () => {
     const topValue = Math.floor(Math.random() * 200) + 1; // Gerar número aleatório entre 1 e 60
     const urlWithTop = getApiUrl(topValue);
 

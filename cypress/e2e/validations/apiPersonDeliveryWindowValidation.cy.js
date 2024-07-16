@@ -2,7 +2,7 @@ const { getApiUrl, apiAuth } = require('../../support/apiPersonDeliveryWindowHel
 
 describe('API Person Delivery Window IS', () => {
   it('should validate the response of API Person Delivery Window', () => {
-    const topValue = Math.floor(Math.random() * 60) + 1; // Gerar número aleatório entre 1 e 60
+    const topValue = Math.floor(Math.random() * 200) + 1; // Gerar número aleatório entre 1 e 60
     const urlWithTop = getApiUrl(topValue);
 
     cy.request({
